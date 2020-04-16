@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js" integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Calculator</title>
+    <link rel="stylesheet" href="style.css" type="text/css">    
+</head>
+<body class="bg-black">
+    <main>
+        <article class="phone">
+            <header class="text-white text-xs font-sans m-2">
+                <div class="left absolute">
+                    <p>9:41</p>
+                </div>
+                <div class="right float-right">
+                    <i class="fas fa-signal mr-1"></i>
+                    <i class="fas fa-wifi mr-1"></i>
+                    <i class="fas fa-battery-full mr-1"></i>
+                </div>
+            </header>
+            <section class="calculator m-2">
+                <input class="bg-black text-right outline-none text-white font-thin font-sans text-6xl h-32 w-full mb-2" maxlength="6" value="0" id="display"/>
+                <div class="buttons">
+                    <div class="flex flex-row">
+                        <button class="btn w-1/4 bg-gray-600 rounded-full h-16 mr-2 mb-2">AC</button>
+                        <button class="btn w-1/4 bg-gray-600 rounded-full h-16 mr-2 mb-2">%</button>
+                        <button class="btn w-1/4 bg-gray-600 rounded-full h-16 mr-2 mb-2">+/-</button>
+                        <button class="btn operator w-1/4 bg-orange-500 text-white rounded-full h-16 mb-2">÷</button>
+                    </div>
+                    <div class="flex flex-row">
+                        <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">7</button>
+                        <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">8</button>
+                        <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">9</button>
+                        <button class="btn operator w-1/4 bg-orange-500 text-white rounded-full h-16 mb-2">x</button>
+                    </div>
+                    <div class="flex flex-row">
+                        <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">4</button>
+                        <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">5</button>
+                        <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">6</button>
+                        <button class="btn operator w-1/4 bg-orange-500 text-white rounded-full h-16 mb-2">-</button>
+                    </div>
+                    <div class="flex flex-row">
+                        <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">1</button>
+                        <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">2</button>
+                        <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">3</button>
+                        <button class="btn operator w-1/4 bg-orange-500 text-white rounded-full h-16 mb-2">+</button>
+                    </div>
+                    <div class="flex flex-row">
+                        <button class="btn w-2/4 bg-gray-800 text-white text-left pl-6 rounded-full h-16 mr-2 mb-2">0</button>
+                        <button class="btn w-1/4 bg-gray-800 text-white rounded-full h-16 mr-2 mb-2">.</button>
+                        <button class="btn w-1/4 bg-orange-500 text-white rounded-full h-16 mb-2">=</button>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <button class="home bg-gray-800 w-24 h-1 block m-auto rounded mb-2 mt-8"></button>
+            </footer>
+        </article>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
